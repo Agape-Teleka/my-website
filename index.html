@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Agape Teleka Website</title>
+    <title>Agape Teleka | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header class="hero">
+
     <img src="images/university-logo.png" class="logo" alt="University Logo">
-    <h1>Welcome to My Website</h1>
+
+    <h1 class="hero-title">AGAPE TELEKA</h1>
+
+    <p class="hero-text">Web Development Student | Kapasa Makasa University</p>
+
+    <button onclick="showMessage()">Explore My Site</button>
+
+    <p id="message"></p>
+
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<section class="container">
+<section class="home-content">
 
-    <h2>Hello 👋</h2>
+    <img src="images/profile.png" class="profile-circle" alt="Profile">
 
-    <p>
-        My name is Agape Teleka. Welcome to my personal website created for my
-        web development assignment at Kapasa Makasa University.
+    <p class="intro-text">
+        Welcome to my personal portfolio website where I showcase my skills in HTML, CSS, and JavaScript.
     </p>
-
-    <img src="images/profile.png" width="200" alt="Profile Image">
-
-    <br><br>
-
-    <button onclick="showMessage()">Click Me</button>
-
-    <p id="message"></p>
 
 </section>
 
+<footer>
+    <p>© 2026 Agape Teleka</p>
+</footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
+
+/* CARDS LAYOUT */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* CARD STYLE */
+.card {
+    background: #111827;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px);
+    background: #1f2937;
+}
+<h1 class="moving-title">AGAPE TELEKA</h1>
+<h2 class="moving-title">Welcome to My Website</h2>

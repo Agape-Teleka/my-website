@@ -1,55 +1,248 @@
+
+/* BODY */
 body {
-    font-family: Arial;
     margin: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: #003366;
+    font-family: Arial;
+    background: linear-gradient(to right, #0f172a, #1e3a8a);
     color: white;
-    padding: 20px;
     text-align: center;
 }
 
+/* HERO SECTION */
+.hero {
+    padding: 50px;
+    background: #0b1b3a;
+}
+
+/* TITLE BIG */
+.hero-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff004c; /* bold maroon-red */
+}
+
+/* HERO TEXT */
+.hero-text {
+    font-size: 18px;
+    color: white;
+}
+
+/* LOGO */
 .logo {
-    width: 60px;
-    float: left;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
+/* NAV */
 nav {
-    background: #0055aa;
+    background: #111827;
     padding: 10px;
-    text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
-    padding: 8px 12px;
-    background: #0077cc;
-    border-radius: 5px;
 }
 
 nav a:hover {
-    background: #0099ff;
+    color: #ff004c;
 }
 
-.container {
-    padding: 20px;
-    text-align: center;
-}
-
-.profile {
-    width: 150px;
+/* PROFILE CIRCLE */
+.profile-circle {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-top: 10px;
+    border: 4px solid #ff004c;
+    margin-top: 20px;
 }
 
+/* INTRO TEXT */
+.intro-text {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* BUTTON */
 button {
-    padding: 10px;
-    background: green;
+    padding: 10px 20px;
+    background: #ff004c;
+    border: none;
     color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: #ff3366;
+}
+
+/* HORIZONTAL LAYOUT */
+.about-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* DARK BLUE CARDS */
+.card-dark {
+    background-color: #002b5c; /* dark blue */
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card-dark:hover {
+    transform: scale(1.05);
+}
+
+/* SKY BLUE TITLES */
+.title-blue {
+    color: skyblue;
+    margin-bottom: 10px;
+}
+
+/* BLACK TEXT */
+.text-black {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* PROFILE IMAGE */
+.profile-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #004080;
+    object-fit: cover;
+}
+
+.profile-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* FULL SCREEN CONTACT AREA */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+/* BIG CONTACT BOX */
+.contact-box {
+    background-color: #002b5c;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+}
+
+/* FORM FULL WIDTH */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* BUTTON */
+.contact-form button {
+    background-color: skyblue;
+    color: black;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #66ccff;
+}
+.moving-text {
+    display: inline-block;
+    animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+}
+.moving-text {
+    animation: moveColor 4s infinite ease-in-out;
+}
+
+@keyframes moveColor {
+    0% {
+        transform: translateX(0);
+        color: maroon;
+    }
+    25% {
+        transform: translateX(10px);
+        color: skyblue;
+    }
+    50% {
+        transform: translateX(0);
+        color: purple;
+    }
+    75% {
+        transform: translateX(-10px);
+        color: orange;
+    }
+    100% {
+        transform: translateX(0);
+        color: maroon;
+    }
+}
+.moving-title {
+    display: inline-block;
+    animation: titleMotion 4s infinite ease-in-out;
+}
+
+@keyframes titleMotion {
+    0% {
+        transform: translateX(0);
+        color: maroon;
+    }
+    25% {
+        transform: translateX(8px);
+        color: skyblue;
+    }
+    50% {
+        transform: translateX(0);
+        color: purple;
+    }
+    75% {
+        transform: translateX(-8px);
+        color: orange;
+    }
+    100% {
+        transform: translateX(0);
+        color: maroon;
+    }
 }

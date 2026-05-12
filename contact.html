@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Agape Teleka</title>
+    <title>Agape Teleka | Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <img src="images/university-logo.png" class="logo" alt="University Logo">
-    <h1>Contact Me</h1>
+    <h1 class="page-title">CONTACT ME</h1>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<section class="container">
+<!-- FULL SCREEN CONTACT SECTION -->
+<section class="contact-container">
 
-    <h2>Get in Touch</h2>
+    <div class="contact-box">
 
-    <form>
-        <input type="text" placeholder="Your Name" required><br><br>
-        <input type="email" placeholder="Your Email" required><br><br>
-        <textarea placeholder="Your Message" required></textarea><br><br>
+        <h2>My Contact Information</h2>
 
-        <button type="submit">Send Message</button>
-    </form>
+        <p><b>Email:</b> agapetk7@gmail.com</p>
+        <p><b>Phone:</b> 0761256468</p>
 
-    <br>
+        <hr>
 
-    <h3>My Contact Information</h3>
+        <h2>Send Me a Message</h2>
 
-    <p><b>Name:</b> Agape Teleka</p>
-    <p><b>University:</b> Kapasa Makasa University</p>
-    <p><b>Email:</b> agapetk7@gmail.com</p>
-    <p><b>Phone:</b> +260 761 256 468</p>
+        <form onsubmit="return sendMessage()" class="contact-form">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+            <br><br>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+            <br><br>
+
+            <textarea id="messageBox" placeholder="Your Message" required></textarea>
+            <br><br>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p id="response"></p>
+
+    </div>
 
 </section>
 
+<footer>
+    <p>© 2026 Agape Teleka</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
+<h1 class="moving-title">CONTACT ME</h1>
+<h2 class="moving-title">My Contact Information</h2>
+<h2 class="moving-title">Send Message</h2>
